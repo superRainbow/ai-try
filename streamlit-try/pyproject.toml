@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "streamlit-try"
+version = "0.1.0"
+description = ""
+authors = ["rainbow <g901612002@hotmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+streamlit = "^1.36.0"
+langchain = "^0.2.6"
+sentence-transformers = "^3.0.1"
+pypdf2 = "^3.0.1"
+pymilvus = "^2.4.4"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "0.5.1"
+pre-commit = "^3.7.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 120  # 依照自己的專案需求設定
+
+[tool.ruff.format]
+quote-style = "double" # double or single 
